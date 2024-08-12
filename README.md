@@ -93,6 +93,11 @@ Object detection and tracking is a crucial aspect of many computer vision applic
      - Run the script that performs detection and tracking, ensuring that all dependencies are correctly installed and configured.
    - **Monitor Output:**
      - View the real-time tracking results, where objects are detected, labeled, and tracked across frames.
+    
+# flow chart
+
+![fowchart](https://github.com/user-attachments/assets/c7702d1b-3237-42f3-bb57-92e23c7abe1d)
+
 
 # Conclusion
    - **Integrating YOLOv8 with EnhancedSTC:**
