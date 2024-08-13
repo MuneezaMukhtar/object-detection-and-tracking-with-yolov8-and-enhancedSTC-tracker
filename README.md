@@ -1,13 +1,13 @@
-## Object-Detection-and-Tracking-With-Yolov8-And-EnhancedSTC-Tracker
+# Object-Detection-and-Tracking-With-Yolov8-And-EnhancedSTC-Tracker
 
 Object detection and tracking is a crucial aspect of many computer vision applications, where you need to identify and monitor objects in real-time. Integrating YOLOv8 for object detection with the Enhanced Spatio-Temporal Context (EnhancedSTC) tracker is a powerful approach to achieve this. This model is utilized to predict the object's location in the next frame, based on the context in the current frame.
 
-# System Requirements
+## System Requirements
   
    - **Python Version:** Python 3.8 or later
    - **Libraries:** OpenCV, PyTorch, Ultralytics YOLOv8, and EnhancedSTC tracker library
 
-# Create a Virtual Environment
+## Create a Virtual Environment
 
    - **Why Use a Virtual Environment?**
      
@@ -20,7 +20,7 @@ Object detection and tracking is a crucial aspect of many computer vision applic
      source yolov8-enhancedstc-env/bin/activate  # On Windows: yolov8-enhancedstc-env\Scripts\activate
      ```
 
-# Install Required Libraries
+## Install Required Libraries
 
    - **Install YOLOv8 and Other Dependencies:**
      
@@ -38,7 +38,7 @@ Object detection and tracking is a crucial aspect of many computer vision applic
        python setup.py install
        ```
        
-# Project Structure
+## Project Structure
    - **Organizing Your Project Files:**
      
      ```
@@ -52,7 +52,7 @@ Object detection and tracking is a crucial aspect of many computer vision applic
      └── models/                  # Folder for trained models
      ```
 
-# Project Setup
+## Project Setup
 
    - **Clone the YOLOv8 and EnhancedSTC Repositories (if needed):**
      
@@ -73,7 +73,7 @@ Object detection and tracking is a crucial aspect of many computer vision applic
      - Label your dataset using LabelImg (detailed below).
        
 
-# Using LabelImg to Label Your Dataset
+## Using LabelImg to Label Your Dataset
 
    - **Install LabelImg:**
      
@@ -95,7 +95,7 @@ Object detection and tracking is a crucial aspect of many computer vision applic
      
      - Draw bounding boxes around objects and assign class labels.
 
-# Label Images
+## Label Images
    - **Creating Bounding Boxes:**
      - Use the annotation tool in LabelImg to draw bounding boxes around objects in each image.
    - **Assigning Class Labels:**
@@ -103,7 +103,7 @@ Object detection and tracking is a crucial aspect of many computer vision applic
    - **Save Annotations:**
      - Save the annotations in YOLO format (`.txt` files) in the `data/labels/` folder.
 
-# Implement Object Detection and Tracking with YOLOv8 and EnhancedSTC Tracker
+## Implement Object Detection and Tracking with YOLOv8 and EnhancedSTC Tracker
    - **Step 1: Initialize YOLOv8 Model**
      - Load the pre-trained YOLOv8 model and prepare it for object detection.
    - **Step 2: Capture Video Stream**
@@ -115,18 +115,24 @@ Object detection and tracking is a crucial aspect of many computer vision applic
    - **Step 5: Update Trackers Frame-by-Frame**
      - As you process each frame, update the position of each object using the EnhancedSTC tracker.
 
-# Running the Detection and Tracking System
+## Running the Detection and Tracking System
    - **Execute the Main Script:**
      - Run the script that performs detection and tracking, ensuring that all dependencies are correctly installed and configured.
    - **Monitor Output:**
      - View the real-time tracking results, where objects are detected, labeled, and tracked across frames.
     
-# flow chart
+## flow chart
 
 ![fowchart](https://github.com/user-attachments/assets/c7702d1b-3237-42f3-bb57-92e23c7abe1d)
 
+## Final results
 
-# Conclusion
+![Screenshot 2024-08-13 104832](https://github.com/user-attachments/assets/8e60a069-2fd8-4bbd-b132-db0dd85f2aa1)
+
+![Screenshot 2024-08-13 104424](https://github.com/user-attachments/assets/f3b05ef1-8c59-4004-8b42-f9003015e82b)
+
+
+## Conclusion
    - **Integrating YOLOv8 with EnhancedSTC:**
      - Combining YOLOv8's detection capabilities with the EnhancedSTC tracker's robust tracking provides a powerful solution for real-time object tracking.
    - **Future Enhancements:**
